@@ -14,7 +14,7 @@ import msgpack
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--host', type=str, default='127.0.0.1')
-parser.add_argument('--port', type=int, default=22222)
+parser.add_argument('--port', type=int, default=33333)
 args = parser.parse_args()
 
 print('test: trying connect to %s:%s' % (args.host, args.port))

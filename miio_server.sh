@@ -6,19 +6,19 @@
 # Required-Stop:
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: MIIO Server
-# Description:       This daemon will start MIIO Server
+# Short-Description: MIIO Server Vacuum
+# Description:       This daemon will start MIIO Server Vacuum
 ### END INIT INFO
 
-NAME="MIIO Server"
+NAME="MIIO Server Vacuum"
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
-SCRIPTNAME=/etc/init.d/miio_server
-PIDFILE=/var/run/miio_server.pid
+SCRIPTNAME=/etc/init.d/miio_server_vacuum
+PIDFILE=/var/run/miio_server_vacuum.pid
 
 DAEMON_USER=root
-DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot/miio_server.py
-DAEMON_ARGS="192.168.1.12 476e6b70343055483230644c53707a12"
-DAEMON_ARGS="$DAEMON_ARGS --host 127.0.0.1 --port 22222"
+DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot/miio_server_vacuum.py
+DAEMON_ARGS="192.168.178.70 3656376f39463834595973774a613641"
+DAEMON_ARGS="$DAEMON_ARGS --host 127.0.0.1 --port 33333"
 
 # Exit if the package is not installed
 [ -x "$DAEMON" ] || exit 0

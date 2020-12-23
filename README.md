@@ -45,7 +45,7 @@ Also need to install virtualenv:
 Then go to plugins folder and clone repository:
 ```
 cd domoticz/plugins
-git clone https://github.com/schurgan/domoticz-mirobot-plugin.git xiaomi-mirobot
+git clone https://github.com/schurgan/domoticz-mirobot-plugin.git xiaomi-mirobot-vacuum
 cd xiaomi-mirobot-vacuum
 virtualenv -p python3 .env
 source .env/bin/activate

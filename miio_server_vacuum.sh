@@ -1,7 +1,7 @@
 #! /bin/sh
 ### BEGIN INIT INFO
-# Author: mrin
-# Provides:          miio_server
+# Author: mrin/schurgan
+# Provides:          miio_server_vacuum
 # Required-Start:
 # Required-Stop:
 # Default-Start:     2 3 4 5

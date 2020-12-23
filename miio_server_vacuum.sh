@@ -16,7 +16,7 @@ SCRIPTNAME=/etc/init.d/miio_server_vacuum
 PIDFILE=/var/run/miio_server_vacuum.pid
 
 DAEMON_USER=root
-DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot/miio_server_vacuum.py
+DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot-vacuum/miio_server_vacuum.py
 DAEMON_ARGS="192.168.178.70 3656376f39463834595973774a613641"
 DAEMON_ARGS="$DAEMON_ARGS --host 127.0.0.1 --port 33333"
 

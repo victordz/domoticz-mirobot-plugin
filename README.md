@@ -46,7 +46,7 @@ Then go to plugins folder and clone repository:
 ```
 cd domoticz/plugins
 git clone https://github.com/schurgan/domoticz-mirobot-plugin.git xiaomi-mirobot
-cd xiaomi-mirobot
+cd xiaomi-mirobot-vacuum
 virtualenv -p python3 .env
 source .env/bin/activate
 
@@ -66,7 +66,7 @@ nano miio_server_vacuum.sh
 
 # file miio_server_vacuum.sh
 DAEMON_USER=root
-DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot/miio_server_vacuum.py
+DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot-vacuum/miio_server_vacuum.py
 DAEMON_ARGS="192.168.178.70 3656376f39463834595973774a613641"
 DAEMON_ARGS="$DAEMON_ARGS --host 127.0.0.1 --port 33333"
 #
@@ -84,7 +84,7 @@ sudo chmod +x miio_server_vacuum.py
 sudo chmod +x miio_server_vacuum.sh
 
 # check your path here:
-sudo ln -s /home/pi/domoticz/plugins/xiaomi-mirobot/miio_server_vacuum.sh /etc/init.d/miio_server_vacuum
+sudo ln -s /home/pi/domoticz/plugins/xiaomi-mirobot-vacuum/miio_server_vacuum.sh /etc/init.d/miio_server_vacuum
 
 # add to startup
 sudo update-rc.d miio_server_vacuum defaults
@@ -134,7 +134,7 @@ If you want to change ```Fan Level Type``` just disable hardware, update type an
 ## How to update plugin
 
 ```
-cd domoticz/plugins/xiaomi-mirobot
+cd domoticz/plugins/xiaomi-mirobot-vacuum
 git pull
 ```
 

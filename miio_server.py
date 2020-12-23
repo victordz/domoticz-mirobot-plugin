@@ -22,10 +22,10 @@ from logging.handlers import RotatingFileHandler
 import logging
 
 parser = argparse.ArgumentParser()
-parser.add_argument('ip', type=str, help='vacuum ip address', default='192.168.1.12"')
-parser.add_argument('token', type=str, help='token', default='476e6b70343055483230644c53707a12')
+parser.add_argument('ip', type=str, help='vacuum ip address', default='192.168.178.70"')
+parser.add_argument('token', type=str, help='token', default='3656376f39463834595973774a613641')
 parser.add_argument('--host', type=str, default='127.0.0.1')
-parser.add_argument('--port', type=int, default=22222)
+parser.add_argument('--port', type=int, default=33333)
 args = parser.parse_args()
 
 send = Queue()
